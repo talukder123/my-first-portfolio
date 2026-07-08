@@ -4,6 +4,61 @@ body {
     padding: 0;
 }
 
+img {
+    max-width: auto;
+}
+
+.btn-primary {
+    padding: 15px 38px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #FF7A00, #FFB347);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all .35s ease;
+    box-shadow: 0 10px 30px rgba(255, 122, 0, .35);
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 18px 40px rgba(255, 122, 0, .5);
+}
+
+.btn-primary:active {
+    transform: scale(.97);
+}
+
+.btn-outline {
+    padding: 15px 38px;
+    background: rgba(255, 122, 0, .08);
+    color: #FF9A1F;
+    border: 2px solid rgba(255, 154, 31, .8);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .35s ease;
+}
+
+.btn-outline:hover {
+    background: #FF8C1A;
+    color: white;
+    border-color: #FF8C1A;
+    box-shadow:
+        0 0 15px rgba(255, 140, 26, .5),
+        0 0 35px rgba(255, 140, 26, .3);
+    transform: translateY(-4px);
+}
+
+.btn-outline:active {
+    transform: scale(.97);
+}
+
 .nav-box {
     margin-top: 30px;
 }
@@ -70,10 +125,52 @@ ul {
     cursor: pointer;
 }
 
-.box {
-    max-width: 1500px;
-    border: 1px solid red;
+.hero-container {
+    background-color: #fff2d9;
 }
+
+.hero-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.hero-left {
+    padding: 10px 30px;
+}
+
+.hero-right {}
+
+.hero-greeting {
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 50px;
+    font-size: 25px;
+    margin: 0;
+    color: black;
+}
+
+.hero-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 80px;
+    margin: 10px auto;
+}
+
+.hero-subtitle p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 19px;
+}
+
+.btn-box {
+    margin-top: 30px;
+}
+
+.hero-right img {
+    position: static;
+    height: 500px;
+}
+
 
 .footer-box {
     display: flex;
@@ -87,6 +184,10 @@ ul {
     gap: 50px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.footer-box p {
+    font-family: "Ubuntu", sans-serif;
 }
 
 footer a {
@@ -110,7 +211,6 @@ footer a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-
     list-style: none;
     padding: 0;
     margin: 0;
