@@ -4,31 +4,26 @@ body {
     padding: 0;
 }
 
-
 .nav-box {
-    margin-top: 30px;
     background: #111;
-    border-bottom: 1px solid #2A2A2A
+    border-bottom: 1px solid #2A2A2A;
 }
 
 .nav-bar {
-    display: flex;
-    border-bottom: 1px solid #2A2A2A;
-    background-color: #111111;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-logo {
     color: white;
-    padding-left: 100px;
-    display: flex;
-    flex: 1;
-    font-size: 30px;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-    padding-left: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 .uk {
@@ -37,42 +32,26 @@ body {
 
 .nav-links {
     display: flex;
-    flex: 1.5;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-ul {
+    gap: 30px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
-    font-size: 18px;
     text-decoration: none;
-    color: #EAEAEA;
-    padding: 10px 15px;
     color: white;
-    border: none;
-    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
 }
 
 .nav-link:hover {
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 15px;
     color: orange;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 .nav-link:active {
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 15px;
     color: rgb(151, 98, 0);
-    border: none;
-    cursor: pointer;
 }
 
 
@@ -242,4 +221,78 @@ footer a:hover {
 .hero-stats p{
     margin-top: 8px;
     color: #6B7280;
+}
+
+/* why choose me */
+
+.choose{
+    padding:100px 0;
+    background:#FFF8F0;
+}
+
+.choose-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading h2{
+    font-size:2.8rem;
+    color:#1F2937;
+    margin-bottom:15px;
+}
+
+.section-heading p{
+    max-width:650px;
+    margin:auto;
+    color:#6B7280;
+    line-height:1.8;
+}
+
+.choose-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.choose-card{
+    background:#ffffff;
+    padding:35px 30px;
+    border-radius:18px;
+    text-align:center;
+    transition:.3s ease;
+    border:1px solid #F5E6D3;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.choose-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(249,115,22,.18);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#FFE8D2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+.choose-card h3{
+    margin-bottom:15px;
+    color:#1F2937;
+}
+
+.choose-card p{
+    color:#6B7280;
+    line-height:1.7;
 }
