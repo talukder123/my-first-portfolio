@@ -13,7 +13,7 @@
     display: inline-block;
     padding: 10px 24px;
     background: #FFE8D6;
-    color: #F97316;
+    color: orange;
     border-radius: 30px;
     font-size: .9rem;
     font-weight: 600;
@@ -30,7 +30,7 @@
 }
 
 .about-container h1 span{
-    color: #F97316;
+    color: orange;
 }
 
 .about-container p{
@@ -42,5 +42,75 @@
 }
 
 .about-container strong{
-    color: #F97316;
+    color: orange;
+}
+
+/*
+personal info
+*/
+
+.personal-info{
+    background:#FFFFFF;
+    padding:100px 0;
+}
+
+.info-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:60px;
+    align-items:center;
+}
+
+.section-tag{
+    display:inline-block;
+    background:#FFE8D6;
+    color:orange;
+    padding:8px 20px;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.info-left h2{
+    font-size:3rem;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.info-left p{
+    color:#666;
+    line-height:1.8;
+}
+
+.info-right{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.info-card{
+    background:#FFF8F0;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #FFE8D6;
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(249,115,22,.12);
+}
+
+.info-card h4{
+    color:orange;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:#555;
+    line-height:1.6;
 }

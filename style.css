@@ -100,7 +100,7 @@ footer a:hover {
 }
 
 .footer-box div h3 {
-    color: orange;
+    color: rgb(255, 165, 0);
     font-weight: bold;
     padding-right: 20px;
     white-space: nowrap;
